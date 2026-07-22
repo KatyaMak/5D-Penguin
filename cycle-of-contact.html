@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Cycle of Contact — Katya Maksimava</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap-820 site-header-inner">
+    <a href="index.html" class="brand">Katya Maksimava</a>
+    <div class="header-back-links">
+      <a href="#" data-back-history>← Back to previous page</a>
+      <a href="gestalt-approach.html">← Back to the guide</a>
+    </div>
+  </div>
+</header>
+
+<section class="wrap-820" style="padding:72px 32px 8px;">
+  <p class="eyebrow">Part of the Gestalt approach</p>
+  <h1 style="font-size:38px;line-height:1.2;font-weight:600;margin:0 0 20px;">The Cycle of Contact</h1>
+  <p style="font-size:18px;line-height:1.7;color:var(--text-35);margin:0 0 8px;max-width:64ch;">A need moves through stages, from a first sensation to full contact and rest. Click a stage above the line — or a disruption below it — to read more about each.</p>
+</section>
+
+<section class="wrap-820" style="padding:24px 32px 16px;">
+  <div class="cycle-legend">
+    <span class="cycle-legend-item"><span class="cycle-legend-dot" style="background:oklch(38% 0.06 230);"></span>Cycle stages</span>
+    <span class="cycle-legend-item"><span class="cycle-legend-dot" style="background:oklch(50% 0.1 30);"></span>Contact disruptions</span>
+  </div>
+  <div class="cycle-diagram-wrap">
+    <svg id="cycle-svg" viewBox="0 0 680 320" style="width:100%;height:auto;display:block;"></svg>
+    <div id="cycle-overlay" style="position:absolute;inset:0;pointer-events:none;"></div>
+  </div>
+  <div class="cycle-detail-box">
+    <h4 id="cycle-detail-title" class="is-hidden"></h4>
+    <p id="cycle-detail-body" class="is-hidden"></p>
+    <p id="cycle-detail-empty">Nothing selected yet — click a point on the diagram above.</p>
+  </div>
+</section>
+
+<section class="wrap-760" style="padding:40px 32px 96px;">
+  <h2 style="font-size:24px;font-weight:600;margin:0 0 14px;">Why this matters in session</h2>
+  <p style="font-size:17px;line-height:1.75;color:var(--text-32);margin:0 0 12px;">Most people don't get stuck at random — they tend to interrupt the cycle in a similar place each time. Some go numb before a sensation is even fully felt. Others get all the way to mobilization and then talk themselves out of acting. Others act, but can never quite let themselves feel satisfied.</p>
+  <p style="font-size:17px;line-height:1.75;color:var(--text-32);margin:0;">Naming where your own pattern tends to break is often more useful than any amount of general insight — it gives us something concrete to work with together.</p>
+</section>
+
+<section class="section-dark" style="padding:72px 32px;">
+  <div class="cta-band" style="max-width:640px;margin:0 auto;">
+    <h2 style="font-size:26px;">Curious where your own cycle tends to break?</h2>
+    <p>A short first call is a good way to find out.</p>
+    <a href="index.html#contact" class="cta-button">Get in touch</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  © 2026 Katya Maksimava, LPCC · Gestalt Therapy Practice · <a href="site-map.html">Site Map</a>
+</footer>
+
+<script>
+  window.CYCLE_CONFIG = {
+    phases: [
+      { label: 'Sensation', x: 40, y: 220, body: 'A physical sensation or need arises — tension, hunger, restlessness, a flicker of feeling.' },
+      { label: 'Awareness', x: 140, y: 160, body: 'You notice the sensation and start to name what it\'s pointing to.' },
+      { label: 'Mobilization', x: 240, y: 105, body: 'Energy gathers around the need; you begin considering how to meet it.' },
+      { label: 'Action', x: 340, y: 70, body: 'You act on it — reaching out, speaking up, moving toward what\'s needed.' },
+      { label: 'Contact', x: 440, y: 50, body: 'Full engagement with the person, object, or experience — the peak of the cycle.' },
+      { label: 'Satisfaction', x: 540, y: 100, body: 'The need is met; the experience settles and feels complete.' },
+      { label: 'Withdrawal', x: 640, y: 220, body: 'Energy returns to rest, freeing attention for whatever arises next.' },
+    ],
+    disruptions: [
+      { label: 'Desensitization', body: 'Numbing out so the original sensation is never fully felt or noticed.' },
+      { label: 'Deflection', body: 'Deflecting attention elsewhere before the need is clearly named.' },
+      { label: 'Introjection', body: 'Adopting someone else\'s "should" instead of your own impulse to act.' },
+      { label: 'Projection', body: 'Attributing your own impulse to someone else instead of acting on it yourself.' },
+      { label: 'Retroflection', body: 'Turning the impulse back on yourself instead of directing it outward.' },
+      { label: 'Egotism', body: 'Overthinking the experience instead of simply letting satisfaction land.' },
+      { label: 'Confluence', body: 'Merging so fully with others that the cycle never quite completes into rest.' },
+    ],
+  };
+</script>
+<script src="main.js"></script>
+</body>
+</html>
